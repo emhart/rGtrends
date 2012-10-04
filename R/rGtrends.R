@@ -95,8 +95,8 @@ my_dates <- format_py_date(dat[2:length(dat)])
       
   }
 output <- data.frame(output)
-output <- cbind(output,my_dates)
-colnames(output) <- c(gsub(" ","",keywords),"Date")
+output <- cbind(my_dates,output)
+colnames(output) <- c("Date",gsub(" ","",keywords))
 
 if(date[1]=="all" && date[2]=="all"){
   return(output)  

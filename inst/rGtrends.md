@@ -12,21 +12,17 @@ The first is via [devtools](http://github.com/hadley/devtools):
 
 1. Download devtools
 2. run the following snippet:
-```{r eval=FALSE}
-require(devtools) 
-install_github("rGtrends","emhart") 
+
+```r
+require(devtools)
+install_github("rGtrends", "emhart")
 library(rGtrends)
 ```
+
 
 ### Methods 2:
 
 1. Download the zipped source from [github](https://github.com/emhart/rGtrends/zipball/master)
-2. Install the zip file with your preferred method, from within the R GUI, or the command line "`R CMD INSTALL (unzipped directory)`"
+2. Install the zip file with your preferred method, from within the R GUI, or the command line
 
-Once you have successfully installed rGtrends using it is easy.  The function takes two inputs, a vector of search terms and a date cut off.  Here's a basic example:
-```{r}
-library(rGtrends)
-my_terms <- c("Twitter","Myspace")
-twit_ms <- rGtrends(my_terms)
-plot()
-```
+`R CMD INSTALL (unzipped director)`
