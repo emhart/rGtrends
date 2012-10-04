@@ -1,0 +1,16 @@
+reshape
+plyr
+ggplot2
+rGtrends
+stringr
+rJython
+rjson
+rJava
+knitr
+stats
+graphics
+grDevices
+utils
+datasets
+methods
+base

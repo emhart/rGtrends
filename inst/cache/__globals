@@ -1,0 +1,3 @@
+unnamed-chunk-3	c	dim	library	lines	plot	rGtrends
+unnamed-chunk-4	$<-	Date	aes	geom_path	ggplot	library	melt	rep	twit_ms	value	variable	ylab
+unnamed-chunk-5	$<-	Date	aes	c	dim	geom_path	ggplot	melt	rGtrends	rep	value	variable	ylab
