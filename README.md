@@ -11,10 +11,9 @@ The first is via [devtools](http://github.com/hadley/devtools):
 
 1. Download devtools
 2. run the following snippet:
-```{r eval=FALSE}
+```r
 require(devtools) 
 install_github("rGtrends","emhart") 
-library(rGtrends)
 ```
 
 ### Methods 2:
