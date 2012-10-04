@@ -3,9 +3,7 @@
 \title{Search google trends (http://trends.google.com)
 using a python API.}
 \usage{
-  rGtrends(keywords,
-    src_path = paste(getwd(), "/src", sep = ""),
-    date = c("all", "all"))
+  rGtrends(keywords, src_path = NA, date = c("all", "all"))
 }
 \arguments{
   \item{keywords}{A vector of search strings, each term
@@ -30,7 +28,7 @@ using a python API.}
 }
 \examples{
 \dontrun{
-my_search <- rGrends("Bieber")
+my_search <- rGtrends("Bieber")
 plot(my_search[,2],my_search[,1],type='l')
 }
 }

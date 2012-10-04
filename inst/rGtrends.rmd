@@ -1,0 +1,19 @@
+rGtrends tutorial
+========================================================
+
+rGtrends is an R wrapper for making calls to [Google Trends](http://www.google.com/trends) it automatically calls a python api which downloads a temporary CSV.  As of 9/27/2012 google changed it's interface for trends and the python component needs to be retooled for finer parsing.  As it stands now only raw data is downloaded with the ability to sort by date.  But once the python api is fixed individual sections can be downloaded.  
+
+Step 1.
+----
+
+ensure
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r fig.width=7, fig.height=6}
+plot(cars)
+```
+

@@ -9,18 +9,25 @@
 #' @author Edmund Hart \email{edmund.m.hart@@gmail.com}
 #' @export
 #' @examples \dontrun{
-#' my_search <- rGrends("Bieber")
+#' my_search <- rGtrends("Bieber")
 #' plot(my_search[,2],my_search[,1],type='l')
 #' }
 #' 
 
-rGtrends <- function(keywords,src_path = paste(getwd(),"/src",sep=""), date=c("all","all")){
+rGtrends <- function(keywords,src_path = NA, date=c("all","all")){
 #require(rJava)
 #require(rJython)
 #require(stringr)
 ## Exception handling
 if(!is.character(keywords)) stop("Keywords must be strings")
 if(length(date)!=2) stop("Date must be a vector of length 2, see documentation")
+
+####Find the installed path of the package for the python if not specified ###
+if(is.na(src_path)){
+  libs_path <- installed.packages()
+  libs_path <- libs_path[grep("rGtrends",libs_path)[1],2]
+  src_path <- paste(libs_path,"/rGtrends/src",sep="")
+}
 
 
   
