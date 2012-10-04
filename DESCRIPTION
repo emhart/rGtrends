@@ -1,0 +1,25 @@
+Package: rGtrends
+Type: Package
+Title: A collection of functions to interface with the unofficial google trends
+    API (http://github.com/suryasev/unofficial-google-trends-api)
+Version: 0.01
+Date: 2012-09-26
+Author: Edmund Hart <edmund.m.hart@gmail.com>
+Maintainer: Edmund Hart <edmund.m.hart@gmail.com>
+Description: An interface to download Google trends data into R
+License: CC0
+URL: http://github.com/emhart/rGtrends
+Bug reports: http://github.com/emhart/rGtrends/issues
+Depends:
+    rJava,
+    rJython,
+    stringr
+Imports:
+    rJava,
+    rJython,
+    stringr
+Collate:
+    'add_char.R'
+    'format_py_date.R'
+    'rGtrends.R'
+    'strip_char.R'
