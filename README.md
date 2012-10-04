@@ -11,6 +11,7 @@ The first is via [devtools](http://github.com/hadley/devtools):
 
 1. Download devtools
 2. run the following snippet:
+
 ```r
 require(devtools) 
 install_github("rGtrends","emhart") 
