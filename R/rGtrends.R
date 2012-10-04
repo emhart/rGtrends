@@ -14,12 +14,14 @@
 #' }
 #' 
 
-rGtrends <- function(keywords,src_path = NA, date=c("all","all")){
+rGtrends <- function(keywords, date=c("all","all"),src_path = NA){
 #require(rJava)
 #require(rJython)
 #require(stringr)
 ## Exception handling
 if(!is.character(keywords)) stop("Keywords must be strings")
+if(length(keywords) > 5) stop("Only 5 keywords can be used in one search")
+
 if(length(date)!=2) stop("Date must be a vector of length 2, see documentation")
 
 ####Find the installed path of the package for the python if not specified ###
