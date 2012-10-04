@@ -1,0 +1,4 @@
+export(rGtrends)
+import(rJava)
+import(rJython)
+import(stringr)

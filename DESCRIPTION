@@ -11,13 +11,13 @@ License: CC0
 URL: http://github.com/emhart/rGtrends
 Bug reports: http://github.com/emhart/rGtrends/issues
 Depends:
-    rjava
-rjython
-stringr
+    rJava,
+    rJython,
+    stringr
 Imports:
-    rjava
-rjython
-rstringr
+    rJava,
+    rJython,
+    stringr
 Collate:
     'add_char.R'
     'format_py_date.R'

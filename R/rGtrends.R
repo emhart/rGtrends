@@ -8,7 +8,7 @@
 #' @import rJython rJava stringr
 #' @author Edmund Hart \email{edmund.m.hart@@gmail.com}
 #' @export
-#' @example \dontrun{
+#' @examples \dontrun{
 #' my_search <- rGrends("Bieber")
 #' plot(my_search[,2],my_search[,1],type='l')
 #' }
