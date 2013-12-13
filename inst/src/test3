@@ -1,0 +1,27 @@
+
+as_list = False
+raw_data = open("report-1.csv",'r')
+#pyGparse(raw_data)
+#print raw_data.read()
+raw_data = raw_data.read()
+section = "main"
+
+if section == "main":
+	section = ("Interest over time")
+else:
+	section = (section)
+         
+segments = raw_data.split('\n\n\n')
+
+counter = 1
+for s in segments:
+	print counter, "\n", s.partition(',')[0], "\n", section in s.partition(',')[0] 
+	if  section in s.partition(',')[0]:
+		if section == "Interest":
+			print s		
+
+                   
+print "end"
+raise Exception("Could not find requested section")
+
+

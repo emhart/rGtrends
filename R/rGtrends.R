@@ -29,6 +29,7 @@ if(is.na(src_path)){
   libs_path <- installed.packages()
   libs_path <- libs_path[grep("rGtrends",libs_path)[1],2]
   src_path <- paste(libs_path,"/rGtrends/src",sep="")
+  
 }
 
 
