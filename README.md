@@ -1,3 +1,10 @@
+DEPRECIATED
+=============
+
+Due to constant changes in the Google trends site, maintaining a package has become untenable.  I'm leaving it up as a guide to how integrate python and R more than anything else.  There's a fully native package called [GTrendsR](https://bitbucket.org/persican/gtrendsr) with native support for the site that currently works.
+
+
+
 README 
 =========
 ## Current status ##
